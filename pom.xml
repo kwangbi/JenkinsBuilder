@@ -33,6 +33,20 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-actuator -->
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-actuator</artifactId>
+		    <version>2.4.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.spotify/docker-maven-plugin -->
+		<dependency>
+		    <groupId>com.spotify</groupId>
+		    <artifactId>docker-maven-plugin</artifactId>
+		    <version>1.2.2</version>
+		</dependency>		
+		
 	</dependencies>
 
 	<build>
@@ -41,6 +55,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+
 		</plugins>
 	</build>
 
