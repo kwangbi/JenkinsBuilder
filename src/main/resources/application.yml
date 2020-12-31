@@ -1,2 +1,19 @@
 server:
   port: 8090
+  
+#Actuator
+management:
+  endpoint:
+    shutdown:
+      enabled: true
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include:
+        - health
+        - info
+
+
+  
